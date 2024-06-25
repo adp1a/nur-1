@@ -1,0 +1,101 @@
+body {
+    height: 100%;
+    background-image: url("./pozadi.jpg");    
+}
+
+#chess-board {
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+#chess-board td {
+    height: 60px;
+    width: 60px;
+}
+
+tbody tr:nth-child(odd) td:not(:first-child):nth-child(odd),
+tbody tr:nth-child(even) td:not(:first-child):nth-child(even) {
+    background-color: #111;
+}
+
+tbody tr:nth-child(odd) td:not(:first-child):nth-child(even),
+tbody tr:nth-child(even) td:not(:first-child):nth-child(odd) {
+    background-color: #fff;
+}
+
+#chess-game {
+    border: 1px solid #000;
+    width: 750px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#chess-game-title {
+    display: flex;
+    flex-direction: row;
+}
+
+#chess-game-title h1 {
+    color: red;
+    position: relative;
+    text-decoration: underline;
+    font-size: 42px;
+}
+
+#chess-game-title h2 {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+#chess-game-title {
+    width: 100%;
+}
+
+#chess-game-title-text {
+    top: 30px;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#chess-game-title h1:before {
+    content: url('./chess.jpeg');
+    position: absolute;
+    left: -100px;
+    top: -50px;
+}
+
+#chess-game-title h1:after {
+    content: url('./chess.jpeg');
+    position: absolute;
+    right: -100px;
+    top: -50px;
+}
+
+#pesec-cerny-1 {
+    position: absolute;
+    background: url("./figurky/pesecCerny.jpg");
+    background-size: cover;
+    left: calc(8*60px + 15px); /*=495px -> nepřesnosti(15px) */
+    top: calc(2*60px + 5px); /*=125px -> nepřesnosti(5px) */
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+}
+
+#kral-bily {
+    position: absolute;
+    background: url("./figurky/kralBily.jpg");
+    background-size: cover;
+    left: calc(2*60px + 5px);/*=125px -> nepřesnosti(5px) */
+    top: calc(8*60px + 15px); /*=495px -> nepřesnosti(15px) */
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+}

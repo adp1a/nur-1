@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pelhřimov</title>
+</head>
+<body>
+    <!-- Navigace -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Pelhřimov</a>
+            <img src="./img/logo-white.svg" alt="" id="navbar-logo">
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#uvod">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#aktuality">Aktuality</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#turistika">Turistika</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#kontakty">Kontakty</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- BODY -->
+    <body>
+        <div id="uvod">
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/main.jpg" class="d-block" id="uvod-1-img" alt="...">
+                        <span class="carousel-item-text" id="carousel-item-text-one">Pelhřimov ‐ město v srdci Vysočiny</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/main-2.jpg" class="d-block" id="uvod-2-img" alt="...">
+                        <span class="carousel-item-text" id="carousel-item-text-two">Pelhřimov ‐ město zážitků</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/main-3.jpg" class="d-block" id="uvod-3-img" alt="...">
+                        <span class="carousel-item-text" id="carousel-item-text-three">Pelhřimov ‐ město s bohatou historií</span>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="podstranka" id="aktuality">
+            <h1>Aktuality</h1>
+            <div class="card mt-2">
+                <h5 class="card-header">Výsadba nové zeleně</h5>
+                <i class="bi bi-tree aktuality-ic"></i>
+                <div class="card-body">
+                    <div class="progress-row">
+                        <p>V letešním roce proběhla výsadba nové zeleně</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <h5 class="card-header">Rekonstrukce bazénu</h5>
+                <i class="bi bi-tsunami aktuality-ic"></i>
+                <div class="card-body">
+                    <div class="progress-row"> 
+                        <p>V blízké budoucnosti je v plánu rekonstrukce plaveckého bazénu.</p>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-25"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <h5 class="card-header">Jarmark a trhy</h5>
+                <i class="bi bi-basket aktuality-ic"></i>
+                <div class="card-body">
+                    <p>Tradičně se konal teď již 12. jarmark.</p>
+                </div>
+            </div>
+        </div>
+        <div class="podstranka" id="turistika">
+            <h1>Turistika</h1>
+            <img src="./img/turistika.jpg" alt="turistika" width="300px" id="turistika-main-img" data-bs-toggle="modal" data-bs-target="#mModal">
+
+            <!-- Modal -->
+            <div class="modal fade" id="mModal" tabindex="-1" aria-labelledby="mModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mModalLabel">Muzeum rekordů</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mezi exponáty patří kupříkladu: největší příbor, ježek v kleci, mamut z proutí v životní velikosti...
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL -->
+
+            <h2>Muzeum rekordů</h2>
+            <p class="w-75">
+                <ul>
+                    <li class="arrow">Stovky exponátů největších, nejmenších, nejdelších, nejtěžších…</li>
+                    <li class="arrow">V expozici Zlaté české ručičky naleznete světově ojedinělou kolekci více než 90 unikátů ze zápalek a zápalkových hlaviček a další výrobky šikovných českých rukou.</li>
+                    <li class="arrow">Odpočinete si na zahradě s obřími předměty.</li>
+                    <li class="arrow">Expozice jsou od sebe vzdáleny pouhých 10 minut chůze.</li>
+                </ul>
+                zrdoj: <a href="https://www.dobryden.cz/muzeum-rekordu-kuriozit-pelhrimov/">muzeum rekordů</a>
+            </p>
+        </div>
+        <div class="podstranka" id="kontakty">
+            <div class="container">
+                <div class="row">
+                  <!-- Town Description -->
+                  <div class="col-lg-6 town-description">
+                    <div class="d-inline-flex">
+                        <h2>Město Pelhřimov</h2>
+                        <img src="./img/favicon.ico" alt="" height="40px">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p>Masarykovo náměstí 1</p>
+                        <p>393 01 Pelhřimov</p>
+                        <p>Tel.: 565 351 111</p>
+                        <p>E-mail: <a href="mailto:podatelna@mupe.cz">podatelna@mupe.cz</a></p>
+                        <p>ID datové schránky: ugqb3nb</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Contact Form -->
+                  <div class="col-lg-6 contact-form">
+                    <h2>Kontaktujte nás</h2>
+                    <form action="#" method="POST">
+                      <div class="form-group">
+                        <label for="name">Vaše jméno:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Vaše emailová adresa:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Zpráva:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-2">Poslat</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </body>
+    <!-- End BODY -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Pelhřimov</h2>
+                    <p>"Malebné městečko plné historického kouzla a moderního pohodlí, které vás vtáhne do svých útulných uliček a pohostinných kaváren."</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Aktuality</h2>
+                    <div class="block-21 mb-4 d-flex">
+                        <div class="text">
+                            <h3 class="heading"><a href="#aktuality">Výsadba nové zeleně</a></h3>
+                            <div class="meta">
+                                <div>
+                                    <a href="#aktuality"><span class="icon-calendar"></span>duben 28, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-21 mb-4 d-flex">
+                        <div class="text">
+                            <h3 class="heading"><a href="#aktuality">Rekonstrukce bazénu</a></h3>
+                            <div class="meta">
+                                <div>
+                                    <a href="#aktuality"><span class="icon-calendar"></span>duben 28, 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Odkazy</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-2 d-block">České hory - Pelhřimov</a></li>
+                        <li><a href="#" class="py-2 d-block">Evropská databanka - Informace o firmách, výrobcích a službách</a></li>
+                        <li><a href="#" class="py-2 d-block">Jihlavské listy</a></li>
+                        <li><a href="#" class="py-2 d-block">Cyklotoulky</a></li>
+                        <li><a href="#" class="py-2 d-block">Obědy a polední menu v Pelhřimově</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        Školní projekt VŠPJ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel()
+        })
+    </script>
+</body>
+</html>

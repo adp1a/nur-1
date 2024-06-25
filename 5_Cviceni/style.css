@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #ff7b00;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 22px;
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 1px black;
+}
+
+h1 {
+    padding: 50px 0 0 40px;
+}
+
+#podstranka1 {
+    height: 500px;
+    padding-top: 10px;
+    background-color: #ffd9a1;
+    display: inline-block;
+    width: 100%;
+}
+
+#podstranka2 {
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+#podstranka3 {
+    height: 500px;
+    background-color: #ffd9a1;
+    display: inline-block;
+    width: 100%;
+}
+
+#podstranka4 {
+    height: 500px;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+#podstranka5 {
+    height: 500px;
+    background-color: #ffd9a1;
+    display: inline-block;
+    width: 100%;
+}
+
+#foot {
+    width: 100%;
+    height: 40px;
+    background-color: #ff7b00;
+    position: relative;
+    bottom: 0px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+/************************************************************************************************************************/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+  
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item a {
+    padding: 0;
+}
+
+.grid-item img {    
+    height: 300px;
+    transition: transform 0.2s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.pod-div {
+    margin-left: 40px;
+}
+
+/********************************************************************************/
+form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form label {
+    font-weight: bold;
+} 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Adam Polívka</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Fotogalerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#modal">Modální okno</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="slider" class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="carousel-item-1">
+                    <img src="./img/img1.jpg" alt="Image 1" id="carousel-image-1" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>USA</h5>
+                        <p>jezero</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="carousel-item-2">
+                    <img src="./img/img2.jpg" alt="Image 2" id="carousel-image-2" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kanada</h5>
+                        <p>jezero</p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="carousel-item-3">
+                    <img src="./img/img3.jpg" alt="Image 3" id="carousel-image-3" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vietnam</h5>
+                        <p>rýžové pole</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <div id="gallery" class="mt-5">
+        <div class="container">
+            <h2>Fotogalerie</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="img/img1.jpg" target="_blank" class="thumbnail">
+                  <img src="img/img1.jpg" alt="Fotografie 1" style="width:100%">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="img/img2.jpg" target="_blank" class="thumbnail">
+                  <img src="img/img2.jpg" alt="Fotografie 2" style="width:100%">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="img/img3.jpg" target="_blank" class="thumbnail">
+                  <img src="img/img3.jpg" alt="Fotografie 3" style="width:100%">
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="modal" class="mt-5">
+        <div class="container">
+            <h2>Fotogalerie s modálním oknem</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal1">
+                  <img src="img/img1.jpg" alt="Fotografie 1" style="width:100%">
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal2">
+                  <img src="img/img2.jpg" alt="Fotografie 2" style="width:100%">
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Popis obrázku 1</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>Popis prvního obrázku: Zajímavý stručný popis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Popis obrázku 2</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>Popis druhého obrázku: Zajímavý stručný popis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

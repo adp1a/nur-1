@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adam Polívka</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#podstranka1">Úvod</a></li>
+            <li><a href="#podstranka2">Fotogalerie</a></li>
+            <li><a href="#podstranka3">Video</a></li>
+            <li><a href="#podstranka4">Zvuk</a></li>
+            <li><a href="#podstranka5">Kontakt</a></li>
+            <li><a href="#podstranka6">SVG</a></li>
+        </ul>
+    </nav>
+    <div id="podstranka1">
+        <h1>Úvod</h1>
+        <div class="pod-div">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Similique fugit esse recusandae excepturi, rerum ipsum alias.
+            Odio, non vero dignissimos voluptates repellendus recusandae ratione,
+            placeat error quia consequuntur repellat. Dolor debitis sed recusandae
+            excepturi temporibus dolores dolorem. Veritatis, corrupti odit autem
+            cupiditate vero non accusantium, in optio iusto, esse quae. Voluptate
+            dolorum nemo vel necessitatibus officiis facere, et, recusandae omnis
+            illo ex magni id quasi! Dolorem beatae repellat fugit exercitationem
+            inventore ipsum atque praesentium enim excepturi delectus accusantium
+            aspernatur facilis iusto rem, omnis ratione tempora sapiente earum aut
+            tenetur vero, eveniet magnam. Quia minima odit voluptatum laudantium
+            fugit earum nemo.
+            </p>
+        </div>
+    </div>
+    <div id="podstranka2">
+        <h1>Fotogalerie</h1>
+        <div class="gallery">
+            <div class="grid-item">
+                <a href="img/img1.jpg">
+                    <img src="img/img1.jpg" alt="Image 1">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img2.jpg">
+                    <img src="img/img2.jpg" alt="Image 2">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img3.jpg">
+                    <img src="img/img3.jpg" alt="Image 3">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img4.jpg">
+                    <img src="img/img4.jpg" alt="Image 4">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img5.jpg">
+                    <img src="img/img5.jpg" alt="Image 5">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img6.jpg">
+                    <img src="img/img6.jpg" alt="Image 6">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img7.jpg">
+                    <img src="img/img7.jpg" alt="Image 7">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="img/img8.jpg">
+                    <img src="img/img8.jpg" alt="Image 8">
+                </a>
+            </div>
+          </div>
+    </div>
+    <div id="podstranka3">
+        <h1>Video</h1>
+        <div class="pod-div">
+            <h2>Medvěd</h2>
+            <video width="440" height="260" controls>
+                <source src="./video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="podstranka4">
+        <h1>Audio</h1>
+        <div class="pod-div">
+            <h2>Happy Day</h2>
+            <audio controls>
+                <source src="./audio/happy-day.mp3" type="audio/mp3">
+            </audio>
+            <h2>Battle of the dragons</h2>
+            <audio controls>
+                <source src="./audio/battle-of-the-dragons.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+    <div id="podstranka5">
+        <h1>Kontakt</h1>
+        <div class="pod-div">
+            <form action="/handle-form" method="post">
+                <div>
+                  <label for="name">Jméno:</label><br>
+                  <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                </div>
+                <div>
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email" placeholder="Váš email" required>
+                </div>
+                <div>
+                  <label for="message">Zpráva:</label><br>
+                  <textarea id="message" name="message" placeholder="..." required></textarea>
+                </div>
+                <div>
+                  <input type="submit" value="Odeslat">
+                </div>
+              </form>
+        </div>
+    </div>
+    <div id="podstranka6">
+        <h1>SVG</h1>
+        <div class="pod-div">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <div id="foot">
+        Copyright &copy; 2024
+    </div>
+</body>
+<script>
+    var canvas = document.getElementById('canvas');
+    canvas.width = 500;
+    canvas.height = 500;
+    var ctx = canvas.getContext('2d');    
+
+    ctx.fillStyle = "rgba(255,0,0,0.45)";
+    ctx.opacity = 0.4;
+    ctx.beginPath();
+    ctx.arc(100, 100, 100, 0, Math.PI*2, true); 
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = "rgba(0,128,0,0.45)";
+    ctx.beginPath();
+    ctx.arc(200, 100, 100, 0, Math.PI*2, true); 
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = "rgba(0,0,255,0.45)";
+    ctx.beginPath();
+    ctx.arc(150, 200, 100, 0, Math.PI*2, true); 
+    ctx.closePath();
+    ctx.fill();
+</script>
+</html>

@@ -1,0 +1,120 @@
+body {
+    background: #00A6FF;
+    position: relative;
+}
+
+.main-wrapper {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 400px);
+}
+
+header {
+    background-color: #005583;
+    color: white;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #005583;
+    display: flex;
+    flex-direction: row;
+}
+
+main aside {
+    color: white;
+    height: 600px;
+    width: 140px;
+}
+
+main aside h2 {
+    text-align: center;
+}
+
+main aside ul li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: square;
+    text-align: left;
+}
+
+main section {
+    background: #fff;
+    height: 470px;
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section p {
+    width: 500px;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 0px;
+}
+
+form {
+    background-color: #6C6C6C;
+    color: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+form label {
+    width: 100px;
+}
+
+form input {
+    width: 250px;
+}
+
+.form-line {
+    display: inline-flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+form input[type="radio"] {
+    width: 10px;
+}
+
+select[name="car-color"] {
+    width: 100px;
+}
+
+form input[value="Smazat"] {
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.form-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-dropdown span {
+    margin-left: 100px;
+}
+
+footer {
+    background-color: #005583;
+    color: white;
+    height: 30px;
+}

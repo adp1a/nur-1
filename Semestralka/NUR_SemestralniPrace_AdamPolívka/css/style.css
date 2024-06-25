@@ -1,0 +1,127 @@
+body {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: blue;
+    color: white;
+    position: fixed;
+    width: 100vw;
+}
+
+#navbar-logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#footer {
+    background-color: #272B4E;
+    color: white;
+    padding-top: 20px;
+}
+
+.podstranka {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#uvod-1-img {
+    width: 100%;
+    height: 100vh;
+}
+
+#uvod-2-img {
+    width: 100%;
+    height: 100vh;
+}
+
+#uvod-3-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item {
+    position: relative;
+    transition: opacity 0.8s ease-in-out !important;
+    opacity: 0.9;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item-text {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    width: 400px;
+    color: white;
+    background: rgba(39, 43, 78, 0.5);
+    font-size: 32px; 
+    padding: 5px;
+}
+
+#aktuality {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#aktuality .progress {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.progress-row {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakty {
+    padding: 50px;
+}
+
+#turistika {
+    padding: 50px;
+}
+
+.aktuality-ic {
+    font-size: 50px;
+    margin: 20px 0 0 10px;
+}
+
+.arrow::marker {
+    content: "⇾ ";
+}
+
+#turistika-main-img {
+    border-right: 10px solid rgba(0, 0, 255, 0.2);
+    border-bottom: 10px solid rgba(0, 0, 255, 0.45);
+}
+
+#turistika-main-img:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    #uvod-1-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #uvod-2-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #uvod-3-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-item-text {
+        display: none;
+    }
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#head {
+    background-color: #fb8300;
+    width: 100%;
+    padding: 40px 0px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    max-height: 0px;
+    background-color: #ffb803;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: max-height 0.6s;
+    -webkit-transition: max-height 0.6s;
+    -ms-transition: max-height 0.6s;
+    -moz-transition: max-height 0.6s;
+    -o-transition: max-height 0.6s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: #fa9d00;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main {
+    line-height: 25px;
+    font-size: 14px;
+    padding: 40px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.show {
+    max-height: 20em;
+}
+
+.responzive_menu {
+    width: 100%;
+    background-color: #e45900;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+  
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {    
+    height: 300px;
+    transition: transform 0.2s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/** TABLET ********************************************/
+@media screen and (max-width: 1250px) {
+    body {
+        font-size: 16px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .grid-item img {
+        height: auto;
+        width: 80vw;
+    }
+}
+
+/** MOBIL ********************************************/
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .responzive_menu {
+        display: block;
+    }
+}

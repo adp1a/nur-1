@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Adam Polívka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head">
+        <h1>Responzivní navigace</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Úvod</a></li>
+            <li><a href="#">Fotogalerie</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="responzive_menu">Menu</div>
+    </nav>
+    <div id="main">
+        <h1>Lorem</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Mollitia, eum fuga facilis quod ut voluptatibus sunt magnam
+            nostrum commodi vero, reiciendis quis illum voluptatem quia
+            ratione! Excepturi fugit enim eum laboriosam eaque incidunt
+            corrupti deserunt reprehenderit exercitationem, unde harum
+            facilis expedita voluptatem repellat rerum architecto nulla
+            nostrum esse? Nostrum error ullam illo, veritatis suscipit
+            eos quisquam veniam. Harum aut adipisci voluptates. Delectus
+            quis, quasi reiciendis voluptatum praesentium incidunt impedit
+            ullam. Aliquid eligendi necessitatibus, libero distinctio nihil
+            nisi delectus qui dolores illo reprehenderit commodi id quaerat,
+        </p>
+        <h2>Lorem</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Mollitia, eum fuga facilis quod ut voluptatibus sunt magnam
+            nostrum commodi vero, reiciendis quis illum voluptatem quia
+            ratione! Excepturi fugit enim eum laboriosam eaque incidunt
+            corrupti deserunt reprehenderit exercitationem, unde harum
+            facilis expedita voluptatem repellat rerum architecto nulla
+            nostrum esse? Nostrum error ullam illo, veritatis suscipit
+            eos quisquam veniam. Harum aut adipisci voluptates. Delectus
+            quis, quasi reiciendis voluptatum praesentium incidunt impedit
+            ullam. Aliquid eligendi necessitatibus, libero distinctio nihil
+            nisi delectus qui dolores illo reprehenderit commodi id quaerat,
+        </p>
+        <div class="gallery">
+            <div class="grid-item">
+                <img src="./img/img1.jpg" alt="Image 1">
+            </div>
+            <div class="grid-item">
+                <img src="./img/img2.jpg" alt="Image 2">
+            </div>
+            <div class="grid-item">
+                <img src="./img/img3.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item">
+                <img src="./img/img4.jpg" alt="Image 4">
+            </div>
+            <div class="grid-item">
+                <img src="./img/img5.jpg" alt="Image 5">
+            </div>
+            <div class="grid-item">
+                <img src="./img/img6.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".responzive_menu").on("click", function () {
+            $("nav ul").toggleClass("show")
+        })
+    </script>
+</body>
+</html>
